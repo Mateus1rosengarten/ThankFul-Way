@@ -1,0 +1,30 @@
+.postContainer{
+    margin: 13px 0px;
+    width: 600px;
+    height: 84px;   
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color:  #343A40;
+  }
+
+  .namestyle{
+    position: absolute;
+    left: 20px;
+    margin-top: 15px;
+    color: #6C757D;
+  }
+  
+  .datestyle{
+    position: absolute;
+    right: 20px;
+    margin-top: 15px;
+    color: #6C757D;
+  }
+  
+  .textpoststyle{
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px ;
+    color: #FFFFFF;
+   
+  } 

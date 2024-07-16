@@ -1,0 +1,261 @@
+.div-profilePage{
+    display: flex;
+    margin-top: 20vh;
+    height: 80vh;
+}
+
+.div-profileName-changes{
+    display: flex;
+    flex-basis: 60%;
+    flex-direction: column;
+}
+.div-profilePage-text{
+    margin-right: 7vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    font-size: 120%;
+
+}
+.div-input-button{
+    display: flex;
+    flex-direction: row;
+}
+
+.h3-profileName-label { 
+    margin-left: 10vw;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 250%;
+    color: #ffffff;
+  }
+
+.input-profileName{
+    box-sizing: border-box;
+    margin-left: 10vw;
+    width: 30vw;
+    height: 7vh;
+    border:2px solid #cccccc;
+    border-radius: 6px;
+    background-color: #15202b;
+    color: #cccccc;
+    padding-left: 16px;
+}  
+
+
+input[type="text"] {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 150%;
+  }
+
+::placeholder {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 100%;
+    padding: 1%;
+    color: #cccccc;
+  }
+
+
+:focus {
+    outline: none;
+  }
+
+
+.button-save-profileName{
+  cursor: pointer;
+  margin-left: 1vw;
+  width: 8vw;
+  height: 7vh;
+  background: #87CEEB;
+  border: 1px solid #15202b;
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 150%;
+  color:black;
+}
+
+.h3-profilePage-text ,.h3-profilePage-text-last{
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 130%;
+    color: #ffffff;
+
+}
+
+
+
+.h3-profileName-text{
+    margin-top: 10vh;
+    margin-left: 10vw;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 200%;
+    color: #ffffff;
+
+}
+
+.h3-profileName-textValue{
+    margin-top: 0vh;
+    margin-left: 13vw;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 250%;
+    color: #ffffff;
+
+}
+
+hr{
+  display: none;
+}
+
+@media only screen and (max-width: 600px) { 
+  .div-profilePage{
+    margin-top: 14.5vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-profileName-changes{
+    align-items: center;
+  }
+
+
+  .h3-profileName-label{
+    margin-left: 0;
+    font-size: 10vw;
+
+  }
+
+  .profileName-icon{
+    margin-left:3vw !important;
+  }
+
+  .div-input-button{
+    width: 100vw;
+    justify-content: center;
+
+  }
+
+  .input-profileName{
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    width: 60vw;
+    height: 6vh;
+
+  }
+
+  .button-save-profileName{
+    width: 32vw;
+    height: 6.2vh;
+    font-size: 6vw;
+
+  }
+
+  .h3-profileName-text{
+    align-self: flex-start;
+    font-size: 7vw;
+    margin-left: 3vw;
+    margin-top: 5vh;
+    }
+
+    .h3-profileName-textValue{
+      font-size: 6vw;
+      align-self: flex-start;
+      margin-left: 4vw;
+      margin-right: 2vw;
+      
+    }
+
+  
+    hr{
+      display: inline;
+    }
+
+    .divider-mobile-screen{
+      align-self: flex-start;
+      width: 100vw;
+      margin-top: 4vh;
+      margin-bottom: 3vh;
+    }
+
+    .h3-profilePage-text {
+      font-size: 5vw;
+      margin-bottom: 7vh;
+    }
+    .h3-profilePage-text-last{
+      font-size: 5vw;
+      margin-top: 1vh;
+      margin-bottom: 6vh;
+
+    }
+  
+    .div-profilePage-text{
+    margin-top: 0;
+    margin-left: 4vw;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1399px) {
+  .div-profilePage-text{
+    margin-top: 5vh;
+
+  }
+
+  .div-profileName-changes{
+    margin-top: 2vh;
+
+  }
+
+  .h3-profilePage-text, .h3-profilePage-text-last{
+    font-size: 2.3vw;
+  }
+
+  .h3-profilePage-text-last{
+    margin-bottom: 5vh;
+  }
+
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1679px) { 
+
+.h3-profilePage-text, .h3-profilePage-text-last{
+  font-size: 2.4vw;
+}
+.h3-profilePage-text-last{
+  margin-bottom: 5vh;
+}
+
+}
+
+@media only screen and (min-width: 1680px) and (max-width: 2200px) { 
+  hr{
+    display: none;
+  }
+  .h3-profilePage-text , .h3-profilePage-text-last{
+    font-size: 2.3vw;
+  }
+  
+
+  .div-profilePage-text{
+    margin-top: 10vh;
+
+  }
+
+  .h3-profileName-label{
+    font-size: 2.6vw;
+}
+.h3-profileName-textValue{
+  font-size: 2.6vw;
+}
+
+.h3-profileName-text{
+  font-size: 1.8vw;
+}
+
+}

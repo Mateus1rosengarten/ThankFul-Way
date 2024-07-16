@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+
+.div-footer {
+   
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+}
+
+.footer{
+    
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #343a40;
+}
+
+.span-footer-name{
+    margin-top: 1vh;
+    font-family: "Roboto";
+    font-size: 120%;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) { 
+    .span-footer-name{
+        font-size: 3.5vw;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+    .span-footer-name{
+        font-size: 150%;
+    }
+}

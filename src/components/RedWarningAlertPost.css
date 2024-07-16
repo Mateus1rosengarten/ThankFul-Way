@@ -1,0 +1,117 @@
+.alert-div-post-error {
+  box-sizing: border-box;
+  width: 45vw;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+}
+
+.alert-text-post-error {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.3vw;
+  color: #721c24;
+  margin-left: 0.75vw;
+  margin-right: 0.5vw;
+ 
+}
+
+.alert-div-login-error{
+  box-sizing: border-box;
+  margin-top: 4vh;
+  width: 30vw;
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+
+}
+
+.alert-text-post-profile-error{
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 90%;
+  color: #721c24;
+  margin-left: 0.5vw;
+
+}
+
+.alert-div-post-profile-error {
+  box-sizing: border-box;
+  width: 35vw;
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+}
+
+.alert-text-post-warning {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 110%;
+  color: #721c24;
+  margin-left: 0.5vw;
+  margin-right: 0.2vw;
+ 
+}
+
+.alert-div-post-warning {
+  box-sizing: border-box;
+  margin-bottom: 2vh;
+  width: 45vw;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  background:  #FFDAB9;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+}
+
+.alert-text-noMorePosts-warning {
+  margin-left: 3vw;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 110%;
+  color: #721c24;
+}
+
+
+.alert-div-noMorePosts-warning{
+  margin-top: 5vh;
+  box-sizing: border-box;
+  width: 40vw;
+  min-height: 8vh;
+  display: flex;
+  align-items: center;
+  background:  #FFDAB9;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+
+      
+}
+
+@media only screen and (max-width:600px) {
+  .alert-div-post-warning ,.alert-div-post-error ,.alert-div-post-profile-error{
+    width: 90vw;
+    padding: 1%;
+  }
+  .alert-div-login-error{
+    margin-top: -6vh;
+    margin-bottom: 1vh;
+    width: 95vw;
+    padding:2%;
+    
+
+  }
+
+  .alert-text-post-error{
+    font-size: 4.5vw;
+  }
+}
