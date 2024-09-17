@@ -1,284 +1,359 @@
-.div-postPage{
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+.div-postPage {
+  margin-top: 10vh;
+  margin-right: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.post-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 10vh;
-    margin-bottom: 3vh;
-    width: 50vw;
-    min-height: 42vh;
-    border: 2px solid #cccccc;
-    border-radius: 6px;
+.post-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  width: 50vw;
+  min-height: 42vh;
+  border: 2px solid #cccccc;
+  border-radius: 6px;
 }
 
 .post-textArea {
-    white-space: nowrap;
-    font-size: 130%;
-    margin-top: 2vh;
-    margin-bottom: 5vh;
-    resize: none;
-    border: none;
-    background-color: #15202b;
-    color: #FFA07A;
-  }
+  white-space: nowrap;
+  font-size: 130%;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+  resize: none;
+  border: none;
+  color: #ffa07a;
+}
 
-  .post-textArea-mobile{
-    display: none;
-  }
- 
+.post-textArea-mobile {
+  display: none;
+}
 
-  .div-three-posts{
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-  }
+.div-three-posts {
+  display: flex;
+  flex-direction: column;
+}
 
-  .label-firstPost ,.label-secondPost ,.label-thirdPost{
-    margin-top: 5vh;
-    margin-left: 1.5vw;
-    color: #FFA07A;
-    font-size: 150%;
-    
+.first-post,
+.second-post,
+.third-post {
+  display: flex;
+  margin-bottom: 4vh;
+}
 
-  }
+.label-firstPost,
+.label-secondPost,
+.label-thirdPost {
+  margin-left: 1.5vw;
+  color: #ffa07a;
+  font-size: 150%;
+}
 
-  .input-firstPost, .input-secondPost, .input-thirdPost{
-    
-    margin-left: 2vw;
-    width: 32vw;
-    height: 5vh;
-    margin-bottom: 2vh;
-    border-radius: 6px;
-    font-size: 120%;
-    border: none;
-    
-  }
-  
+.input-firstPost,
+.input-secondPost,
+.input-thirdPost {
+  margin-left: 2vw;
+  width: 32vw;
+  height: 4.5vh;
+  min-height: 40px;
+  border-radius: 6px;
+  font-size: 120%;
+  border: none;
+  margin-right: 2vw;
+}
 
-  .button-post{
-    cursor: pointer;
+.div-button {
+  display: flex;
+  justify-content: end;
+}
+
+.button-post {
+  cursor: pointer;
   margin-bottom: 2vh;
-  margin-left: 38vw;
+  margin-right: 1vw;
   width: 11vw;
-  min-height: 7vh;
+  min-height: 50px;
   color: black;
-  background-color: #87CEEB;
+  background-color: #87ceeb;
   border: 1px solid #15202b;
   border-radius: 6px;
   font-family: "Roboto";
-  font-size: 120%;
+  font-size: 1.5rem;
   font-weight: 400;
- 
+}
+
+.div-with-posts {
+  margin-bottom: 10vh;
+}
+
+.users-post-box {
+  margin: 2vh;
+  width: 50vw;
+  min-height: 27vh;
+  border: 1px solid white;
+  border-radius: 6px;
+  background-color: #343a40;
+  overflow: hidden;
+}
+
+.post-box-user-date {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.post-userName {
+  font-size: 130%;
+  margin-top: 1vh;
+  margin-left: 2vw;
+  color: #ffa07a;
+}
+
+.post-date {
+  font-size: 120%;
+  margin-top: 1vh;
+  margin-right: 2vw;
+  color: #ffa07a;
+}
+
+.post-content-texts {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.post-text-content-first,
+.post-text-content-second,
+.post-text-content-third {
+  width: 100%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: white;
+  font-size: 120%;
+  flex-wrap: wrap;
+  white-space: pre-wrap;
+  word-break: break-all;
+  display: block;
+  text-align: left;
+}
+
+.spinner-style {
+  margin-top: 5vh;
+  border: 0.5vw solid #f3f3f3;
+  border-top: 0.5vw solid #3498db;
+  border-radius: 50%;
+  width: 5vh;
+  height: 5vh;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button-loadMore-div {
+  margin: 2vh;
+  display: flex;
+  justify-content: center;
+}
+.button-loadMore {
+  cursor: pointer;
+  margin-top: 2vh;
+  width: 15vw;
+  height: 7vh;
+  color: black;
+  background-color: #87ceeb;
+  border: 1px solid #15202b;
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 120%;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+  .post-textArea-mobile {
+    font-size: 1.8rem !important;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+  .div-postPage {
+    margin-top: 17vh;
+  }
+  .post-box {
+    margin-top: 3vh;
+    width: 90vw;
+    min-height: 34vh;
+  }
+  .post-textArea {
+    display: none;
   }
 
-  .div-with-posts{
-    margin-bottom: 10vh;
-
+  .post-textArea-mobile {
+    display: inline;
+    white-space: nowrap;
+    font-size: 2.2rem;
+    resize: none;
+    border: none;
+    background-color: #15202b;
+    color: #ffa07a;
   }
 
-  .users-post-box{
-    
-    margin: 2vh;
-    width: 50vw;
-    min-height: 27vh;   
-    border: 1px solid white;
-    border-radius: 6px;
-    background-color:  #343A40;
-    overflow: hidden;
-  
-  }
-
-
-  .post-box-user-date{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-  }
-
-  .post-userName{
-    font-size: 130%;
-    margin-top: 1vh;
-    margin-left: 2vw;
-    color:  #FFA07A;
-  }
-
-  .post-date{
-    font-size: 120%;
-   margin-top: 1vh;
-   margin-right: 2vw;
-   color:  #FFA07A;
-  }
-
-  .post-content-texts{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-
-  .post-text-content-first,.post-text-content-second,.post-text-content-third{
-    width: 100%;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    color: white;
-    font-size: 120%;
-    flex-wrap: wrap;
-    white-space: pre-wrap;
-    word-break: break-all;
-    display: block;
-    text-align: left;
-   
-
-  }
-  
-  .spinner-style{
+  .div-three-posts {
     margin-top: 5vh;
-    border: 0.5vw solid #f3f3f3;
-    border-top: 0.5vw solid #3498db;
-    border-radius: 50%;
-    width: 5vh; 
-    height: 5vh; 
-    animation: spin 2s linear infinite;
-    }
-    
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    .button-loadMore-div{
-      margin:2vh;
-      display: flex;
-      justify-content: center;
+  }
 
-    }
-    .button-loadMore{
-      cursor: pointer;
-      margin-top: 2vh;
-      width: 15vw;
-      height: 7vh;
-      color: black;
-      background-color: #87CEEB;
-      border: 1px solid #15202b;
-      border-radius: 6px;
-      font-family: "Roboto";
-      font-weight: 400;
-      font-size: 120%;
+  .first-post,
+  .second-post,
+  .third-post {
+    justify-content: start;
+    margin-left: 2vw;
+  }
 
-    }
+  .input-firstPost,
+  .input-secondPost,
+  .input-thirdPost {
+    width: 77vw;
+  }
 
-    @media only screen and (max-width: 600px) {
+  .input-thirdPost {
+    width: 76.5vw;
+  }
 
-      .div-postPage {
-        margin-top:12vh ;
-      }
-      .post-box{
-        margin-top: 3vh;
-        width: 90vw;
-        min-height: 34vh;
-      }
-      .post-textArea{
-        display: none;  
-      }
+  .input-firstPost {
+    margin-left: 2.6vw !important;
+  }
 
-      .post-textArea-mobile{
-        display: inline;
-        white-space: nowrap;
-        font-size: 6vw;
-        margin-top: 5vh;
-        resize: none;
-        border: none;
-        background-color: #15202b;
-        color: #FFA07A;
-      
-      }
+  .input-thirdPost {
+    margin-bottom: 0 !important;
+  }
 
-      .div-three-posts{
-        margin-top: 3vh;
-      }
+  .label-firstPost,
+  .label-secondPost,
+  .label-thirdPost {
+    margin-left: 0;
+  }
 
-      .input-firstPost, .input-secondPost, .input-thirdPost{
-        
-        width: 75vw;
-        
-      }
+  .div-button {
+    justify-content: center;
+  }
+  .button-post {
+    margin-top: 1vh;
+    width: 85vw;
+    font-size: 2.2rem;
+  }
+  .div-with-posts {
+    width: 90vw;
+  }
 
-      .input-thirdPost {
-        margin-bottom: 0 !important;
-      }
-      .button-post{
-        margin-left: 8.4vw;
-        margin-top: 1vh;
-        width: 76.2vw;
-        font-size: 6vw;
-      }
-      .div-with-posts{
-        width: 90vw;
-      }
+  .users-post-box {
+    width: 90vw;
+    margin-left: 0;
+  }
+  .post-userName {
+    margin-left: 3vw;
+  }
+  .post-date {
+    margin-right: 3vw;
+  }
 
-      .users-post-box{
-        width: 90vw;
-        margin-left: 0;
-       }
-       .post-userName{
-        margin-left: 3vw;
-       }
-       .post-date{
-        margin-right: 3vw;
-       }
-       .post-text-content-first{
-        margin-left: -0.3vw;
-       }
-       .post-text-content-second ,.post-text-content-third ,.post-text-content-first{
-        margin-left: 1.2vw;
-        margin-right: 1vw;
-       }
-      }
+  .post-text-content-second,
+  .post-text-content-third,
+  .post-text-content-first {
+    margin-left: 1.5vw;
+    margin-right: 1vw;
+  }
 
-    @media only screen and (min-width: 1680px) and (max-width: 2200px) { 
+  .alert-div-post-warning {
+    width: 90vw !important;
+    padding: 1% !important;
+  }
+}
 
-      .post-textArea{
-        font-size: 150%;
+@media only screen and (min-width: 1680px) and (max-width: 2200px) {
+  /* BIG SCREEN */
 
-      }
-      .users-post-box{
-        min-height: 25vh ;
-      }
+  .post-textArea {
+    font-size: 2.2rem;
+  }
+  .users-post-box {
+    min-height: 25vh;
+  }
 
-      .post-userName{
-        font-size: 160%;
-      }
+  .post-userName {
+    font-size: 1.8rem;
+  }
 
-      .post-date{
-        font-size: 160%;
-      }
-      .post-text-content-first,.post-text-content-second,.post-text-content-third{
-        font-size: 140%;
-      }
+  .post-date {
+    font-size: 1.8rem;
+  }
+  .post-text-content-first,
+  .post-text-content-second,
+  .post-text-content-third {
+    font-size: 1.5rem;
+  }
 
-      .alert-text-post-warning{
-        font-size:150%
-      }
+  .alert-text-post-warning {
+    font-size: 1.5rem;
+  }
 
-      .alert-text-post-error{
-        font-size:1.6vw
-      }
+  .alert-text-post-error {
+    font-size: 1.5rem;
+  }
 
-      .button-post{
-        font-size: 170%;
-      }
+  .button-post {
+    font-size: 1.6rem;
+  }
+}
 
-    }
+@media only screen and (max-height: 500px) {
+  .div-with-posts {
+    margin-bottom: 20vh;
+  }
+}
 
-   
+@media screen and (max-height: 600px) {
+  .post-textArea-mobile {
+    margin-top: 10vh;
+  }
+  .post-box {
+    margin-top: 5vh;
+  }
+  .input-firstPost,
+  .input-secondPost,
+  .input-thirdPost {
+    margin-bottom: 4vh;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  /* MOBILE */
+  .post-textArea-mobile {
+    font-size: 1.2rem !important;
+  }
+  .div-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-post {
+    width: 85vw !important ;
+    margin-top: 0 !important;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-height: 600px) and (min-width: 600px) {
+  .post-box {
+    margin-top: 20vh;
+  }
+}

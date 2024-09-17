@@ -1,261 +1,325 @@
-.div-profilePage{
-    display: flex;
-    margin-top: 20vh;
-    height: 80vh;
+.div-profilePage {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20vh;
+  height: 80vh;
+  justify-content: space-evenly;
 }
 
-.div-profileName-changes{
-    display: flex;
-    flex-basis: 60%;
-    flex-direction: column;
+.div-profileName-changes {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  width: 40%;
 }
-.div-profilePage-text{
-    margin-right: 7vw;
-    margin-top: 5vh;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 40%;
-    font-size: 120%;
-
+.div-heading-input-button {
+  display: flex;
+  flex-direction: column;
 }
-.div-input-button{
-    display: flex;
-    flex-direction: row;
+.div-profilePage-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 120%;
+  height: 100%;
+  width: 30%;
+}
+.div-input-button {
+  display: flex;
+  flex-direction: row;
 }
 
-.h3-profileName-label { 
-    margin-left: 10vw;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 250%;
-    color: #ffffff;
-  }
+.div-new-profileName {
+  display: flex;
+  flex-direction: column;
+}
 
-.input-profileName{
-    box-sizing: border-box;
-    margin-left: 10vw;
-    width: 30vw;
-    height: 7vh;
-    border:2px solid #cccccc;
-    border-radius: 6px;
-    background-color: #15202b;
-    color: #cccccc;
-    padding-left: 16px;
-}  
+.h3-profileName-label {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: #ffffff;
+}
 
+.input-profileName {
+  box-sizing: border-box;
+  width: 80%;
+  height: clamp(40px, 7vh, 60px);
+  border: 2px solid #cccccc;
+  border-radius: 6px;
+  background-color: #15202b;
+  color: #cccccc;
+  padding-left: 16px;
+}
 
 input[type="text"] {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 150%;
-  }
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 150%;
+}
 
 ::placeholder {
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 100%;
-    padding: 1%;
-    color: #cccccc;
-  }
-
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 100%;
+  padding: 1%;
+  color: #cccccc;
+}
 
 :focus {
-    outline: none;
-  }
+  outline: none;
+}
 
-
-.button-save-profileName{
+.button-save-profileName {
   cursor: pointer;
-  margin-left: 1vw;
   width: 8vw;
-  height: 7vh;
-  background: #87CEEB;
+  height: clamp(40px, 7vh, 60px);
+  margin-left: 1vw;
+  background: #87ceeb;
   border: 1px solid #15202b;
   border-radius: 6px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 150%;
-  color:black;
+  color: black;
 }
 
-.h3-profilePage-text ,.h3-profilePage-text-last{
-    font-family: "Roboto";
-    font-weight: 300;
-    font-size: 130%;
-    color: #ffffff;
-
+.h3-profilePage-text,
+.h3-profilePage-text-last {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #ffffff;
 }
 
-
-
-.h3-profileName-text{
-    margin-top: 10vh;
-    margin-left: 10vw;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 200%;
-    color: #ffffff;
-
+.h3-profileName-text {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2rem;
+  color: #ffffff;
+  height: 1%;
 }
 
-.h3-profileName-textValue{
-    margin-top: 0vh;
-    margin-left: 13vw;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 250%;
-    color: #ffffff;
-
+.h3-profileName-textValue {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2rem;
+  color: #ffa07a;
 }
 
-hr{
+hr {
   display: none;
 }
 
-@media only screen and (max-width: 600px) { 
-  .div-profilePage{
-    margin-top: 14.5vh;
+@media screen and (max-width: 820px) {
+  /* VERY SMALL SCREEN */
+  .h3-profileName-label {
+    font-size: 1.6rem;
+  }
+
+  .h3-profilePage-text,
+  .h3-profilePage-text-last {
+    font-size: 1.2rem;
+  }
+
+  .button-save-profileName {
+    width: 13vw;
+  }
+
+  .h3-profileName-text {
+    font-size: 1.2rem;
+  }
+
+  .h3-profileName-textValue {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 820px) and (max-width: 900px) {
+  /* SMALL SCREEN */
+
+  .h3-profilePage-text,
+  .h3-profilePage-text-last {
+    font-size: 1.5rem;
+  }
+
+  .h3-profileName-label {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 910px) and (max-width: 1235px) {
+  /* MEDIUM SCREEN */
+
+  .h3-profilePage-text,
+  .h3-profilePage-text-last {
+    font-size: 1.7rem;
+  }
+
+  .h3-profileName-label {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* BIG SCREEN */
+
+  .h3-profilePage-text,
+  .h3-profilePage-text-last,
+  .h3-profileName-text {
+    font-size: 2.2rem;
+  }
+  .h3-profileName-label {
+    font-size: 2.5rem;
+  }
+
+  .h3-profileName-textValue {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  /* VERY BIG SCREEN */
+
+  .h3-profilePage-text,
+  .h3-profilePage-text-last,
+  .h3-profileName-text {
+    font-size: 2.5rem;
+  }
+  .h3-profileName-label {
+    font-size: 2.8rem;
+  }
+
+  .h3-profileName-textValue {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .div-profilePage-text {
+    margin-top: 4vh;
+  }
+
+  .h3-profileName-label {
+    font-size: 2rem;
+  }
+
+  .h3-profileName-text {
+    font-size: 1.6rem;
+  }
+  .h3-profilePage-text,
+  .h3-profilePage-text-last {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media screen and (max-height: 650px) and (max-width: 1450px) {
+  /* CUSTOM */
+  .h3-profilePage-text,
+  .h3-profilePage-text-last {
+    font-size: 1.3rem !important;
+  }
+
+  .h3-profileName-label {
+    font-size: 1.8rem;
+  }
+
+  .h3-profileName-text {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* MOBILE */
+  .div-profilePage {
     flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    margin-top: 10vh;
+  }
+
+  .div-heading-input-button {
+    display: flex;
+    width: 100vw;
     align-items: center;
   }
-  .div-profileName-changes{
-    align-items: center;
+  .div-profileName-changes {
+    width: 100vw;
+    margin-top: 4vh;
   }
 
-
-  .h3-profileName-label{
-    margin-left: 0;
-    font-size: 10vw;
-
+  .div-new-profileName {
+    display: flex;
+    margin-left: 6vw;
   }
 
-  .profileName-icon{
-    margin-left:3vw !important;
+  .h3-profileName-label {
+    font-size: 1.8rem;
+    display: flex;
   }
 
-  .div-input-button{
+  .profileName-icon {
+    margin-left: 3vw !important;
+  }
+
+  .div-input-button {
     width: 100vw;
     justify-content: center;
-
+    margin-bottom: 6vh;
   }
 
-  .input-profileName{
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
+  input[type="text"] {
+    font-size: 100%;
+  }
+
+  .input-profileName {
     width: 60vw;
     height: 6vh;
-
+    min-height: 40px;
   }
 
-  .button-save-profileName{
-    width: 32vw;
+  .button-save-profileName {
+    width: 25%;
     height: 6.2vh;
+    min-height: 40px;
     font-size: 6vw;
-
   }
 
-  .h3-profileName-text{
+  .h3-profileName-text {
+    font-size: 1.3rem;
+  }
+
+  .h3-profileName-textValue {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    display: inline;
+  }
+
+  .divider-mobile-screen {
     align-self: flex-start;
-    font-size: 7vw;
+    width: 100vw;
+  }
+
+  .h3-profilePage-text {
+    font-size: 1rem;
+    margin-bottom: 3vh;
+  }
+
+  .h3-profilePage-text-last {
+    font-size: 1rem;
+    margin-top: 1vh;
+    margin-bottom: 6vh;
+  }
+
+  .div-profilePage-text {
+    justify-content: flex-start;
+    width: 95vw;
+    height: 80%;
+    min-height: 200px;
+    margin-top: 1vh;
     margin-left: 3vw;
-    margin-top: 5vh;
-    }
-
-    .h3-profileName-textValue{
-      font-size: 6vw;
-      align-self: flex-start;
-      margin-left: 4vw;
-      margin-right: 2vw;
-      
-    }
-
-  
-    hr{
-      display: inline;
-    }
-
-    .divider-mobile-screen{
-      align-self: flex-start;
-      width: 100vw;
-      margin-top: 4vh;
-      margin-bottom: 3vh;
-    }
-
-    .h3-profilePage-text {
-      font-size: 5vw;
-      margin-bottom: 7vh;
-    }
-    .h3-profilePage-text-last{
-      font-size: 5vw;
-      margin-top: 1vh;
-      margin-bottom: 6vh;
-
-    }
-  
-    .div-profilePage-text{
-    margin-top: 0;
-    margin-left: 4vw;
-    }
-
-}
-
-@media only screen and (min-width: 1280px) and (max-width: 1399px) {
-  .div-profilePage-text{
-    margin-top: 5vh;
-
+    margin-right: 3vw;
   }
-
-  .div-profileName-changes{
-    margin-top: 2vh;
-
-  }
-
-  .h3-profilePage-text, .h3-profilePage-text-last{
-    font-size: 2.3vw;
-  }
-
-  .h3-profilePage-text-last{
-    margin-bottom: 5vh;
-  }
-
-
-}
-
-@media only screen and (min-width: 1400px) and (max-width: 1679px) { 
-
-.h3-profilePage-text, .h3-profilePage-text-last{
-  font-size: 2.4vw;
-}
-.h3-profilePage-text-last{
-  margin-bottom: 5vh;
-}
-
-}
-
-@media only screen and (min-width: 1680px) and (max-width: 2200px) { 
-  hr{
-    display: none;
-  }
-  .h3-profilePage-text , .h3-profilePage-text-last{
-    font-size: 2.3vw;
-  }
-  
-
-  .div-profilePage-text{
-    margin-top: 10vh;
-
-  }
-
-  .h3-profileName-label{
-    font-size: 2.6vw;
-}
-.h3-profileName-textValue{
-  font-size: 2.6vw;
-}
-
-.h3-profileName-text{
-  font-size: 1.8vw;
-}
-
 }

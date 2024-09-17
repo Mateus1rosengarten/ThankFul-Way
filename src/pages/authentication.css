@@ -1,145 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 .div-authPage {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10vh;
-    height: 90vh;
-}
-
-.div-authInputs{
-  
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    height: 100vh;
-    margin-top: 5vh;
-    margin-left: 10vw;
-}
-.div-authLogin{
-    margin-top: 4vh;
-    display: flex;
-    flex-direction: column;
-}
-.div-login{
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.div-login-userName{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 20vh;
 }
-.div-inputsLogin{
-    display: flex;
-    flex-direction: column;
-    margin-top: 4vh;
-    margin-left: 1vw;
+
+.div-authPage-logged {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100vh;
 }
-.div-authTexts{
-    display: flex;
-    flex-direction: column;
-    width: 45vw;
-    margin-top: 8vh;
-    margin-right: 10vw;
-   
+.div-authInputs {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  flex-basis: 40%;
+  margin-top: -3vh;
+}
+.div-authLogin,
+.div-authRegister {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  min-height: 230px !important;
+}
+.div-login,
+.div-signUp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25%;
+  margin-bottom: 1vh;
+}
+
+.div-login-userName,
+.div-login-pass,
+.div-login-repeatPass {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 25%;
+  margin-bottom: 4vh;
+}
+.div-inputsLogin {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4vh;
+  margin-left: 1vw;
+}
+
+.div-buttons-auth {
+  display: flex;
+  justify-content: center;
+  height: 25%;
+}
+.div-authTexts {
+  height: 100vh;
+  display: flex;
+  flex-basis: 45%;
+  margin-left: 3vw;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+
+.div-picture-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .h3-auth {
   cursor: pointer;
-  margin-top: 4.6vh;
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 2.2vw;
-  
-
+  font-size: 1.8vw;
   color: #ffffff;
 }
 
-
-
 .label-login-userName {
-    margin-bottom: 4vh;
-    margin-right: 4vw;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 2vw;
-    color: rgba(255, 255, 255, 0.8);
-  }
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 .input-login-userName {
-    margin-top: -0.3vh;
-    width: 21.7vw;
-    height: 5vh;
-    border: solid #cccccc;
-    border-radius: 1vh;
-    background-color: #15202b;
-    color: #cccccc;
-  
-  }
-
-  .div-login-pass{
-    display: flex;
-    direction: row;
-  }
-
-  .div-login-repeatPass{
-    margin-top: 2vh;
-    display: flex;
-    direction: row;
-
-  }
-
-  .input-login-pass {
-    margin-top: -0.3vh;
-    width: 21.7vw;
-    height: 5vh;
-    margin-bottom: 0vh;
-    border: solid #cccccc;
-    border-radius: 1vh;
-    background-color: #15202b;
-    color: #cccccc;
-  
-  }
-
-  .input-login-RepeatPass{
-    margin-top: -0.3vh;
-    width: 21.7vw;
-    height: 5vh;
-    border: solid #cccccc;
-    border-radius: 1vh;
-    background-color: #15202b;
-    color: #cccccc;
-
-  }
-
-
-.label-login-pass{
-    margin-bottom: 2vh;
-    margin-right: 0.7vw;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 2vw;
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .label-login-RepeatPass{
-    margin-top: 1vh;
-    margin-bottom: 2.5vh;
-    margin-right: 0.3vw;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1.2vw;
-    color: rgba(255, 255, 255, 0.8);
-
-  }
-  .button-google{
-  cursor: pointer;
-  margin-top: 4vh;
-  margin-left: 1.3vw;
-  padding-left: 3%;
-  height: 6vh;
   width: 21.7vw;
-  margin-bottom: 3vh;
+  height: 90%;
+  margin-left: 3.2vw;
+  font-size: 3vh;
+  border: solid #cccccc;
+  border-radius: 1vh;
+  background-color: #15202b;
+  color: #cccccc;
+}
+
+.div-login-repeatPass {
+  display: flex;
+  direction: row;
+}
+
+.input-login-pass {
+  width: 21.7vw;
+  height: 90%;
+  font-size: 3vh;
+  border: solid #cccccc;
+  border-radius: 1vh;
+  background-color: #15202b;
+  color: #cccccc;
+}
+
+.input-login-RepeatPass {
+  margin-top: -0.3vh;
+  width: 21.7vw;
+  height: clamp(35px, 5vh, 60px);
+  border: solid #cccccc;
+  border-radius: 1vh;
+  background-color: #15202b;
+  color: #cccccc;
+}
+
+.label-login-pass {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.label-login-RepeatPass {
+  margin-top: 1vh;
+  margin-bottom: 2.5vh;
+  margin-right: 0.3vw;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.2vw;
+  color: rgba(255, 255, 255, 0.8);
+}
+.button-google {
+  cursor: pointer;
+  padding-left: 3%;
+  width: 22.5vw;
+  height: 69%;
+  min-height: 40px;
+  margin-left: 1.3vw;
   background-color: #ffffff;
   font-family: "Roboto";
   transition: background-color 0.3s, box-shadow 0.3s;
@@ -149,727 +159,804 @@
   font-size: 1.8vw;
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
   background-repeat: no-repeat;
-  background-size:2vw;
-  background-position:10%;
+  background-size: 2vw;
+  background-position: 10%;
+}
+
+.button-login,
+.button-register {
+  cursor: pointer;
+  height: 96%;
+  min-height: 50px !important;
+  margin-top: -2vh;
+  width: 88%;
+  color: black;
+  background-color: #87ceeb;
+  border: solid #15202b;
+  border-radius: 1vh;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.6vw;
+}
+
+.div-horizontal-divider {
+  width: 87%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.div-horizontal-divider-site-title {
+  display: none;
+}
+
+.divider-home-mobile-screen {
+  display: none;
+}
+
+.left-horizontal {
+  width: 5vw;
+  flex: 1;
+  border-bottom: 1px solid #ffffff;
+  margin-right: 1vw;
+}
+
+.rigth-horizontal {
+  flex: 1;
+  border-bottom: 1px solid #ffffff;
+  margin-left: 1vw;
+}
+
+.text-does-not-have-account {
+  font-size: 1rem;
+  color: #ffffff;
+  display: inline;
+}
+
+.div-signUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 25%;
+}
+
+.label-input-userName {
+  margin-top: -0.3vh;
+  width: 20.2vw;
+  height: 5vh;
+  border: solid #cccccc;
+  border-radius: 1vh;
+  background-color: #15202b;
+  color: #cccccc;
+}
+
+.inputName-pass {
+  width: 20.2vw;
+  height: 5vh;
+  margin-bottom: 1vh;
+  border: solid #cccccc;
+  border-radius: 1vh;
+  background-color: #15202b;
+  color: #cccccc;
+}
+
+.h3-welcomeUnLogged {
+  margin-bottom: 10vh;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+.div-loggedText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-top: 10vh;
+}
+
+.h3-welcomeLogged {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.div-labels-uploadImage {
+  display: flex !important;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+.h3-manualApp,
+.h3-manualApp-last {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.h3-manualApp-colored-text {
+  color: #ffa07a;
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.7rem;
+}
+
+.div-loader-logged-page{
+  position: absolute;
+  left:45vw;
+  top: 15vw;
+}
+
+/* .input-image {
+  margin-top: 2vh;
+  margin-left: 11vw;
+}
+
+.button-label {
+  background-color: #ffffff;
+  color: #007bff;
+  cursor: pointer;
+  border: 1px solid #15202b;
+  border-radius: 1vh;
+  min-height: 43px !important;
+  height: 4vh;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5vw;
+} */
+
+/* .label-picture {
+  background-color: #ffffff;
+  color: #007bff;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5vw;
+} */
+
+/* .button-image {
+  cursor: pointer;
+  width: 11vw;
+  min-height: 43px;
+  color: black;
+  background-color: #87ceeb;
+  border: 1px solid #15202b;
+  border-radius: 1vh;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+
+.circle-container {
+  height: 300px;
+  width: 300px;
+}
+
+.picture-login {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 10;
+} */
+
+.div-site-title-mobile,
+.site-title-mobile {
+  display: none;
+}
+
+.login-errors-mobile {
+  display: none;
+}
+.signup-errors-mobile {
+  display: none;
+}
+
+@media (max-width: 340px) {
+  .input-login-pass,
+  .input-login-userName {
+    width: 45vw !important ;
+  }
+  .button-google {
+    width: 48vw !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 375px) {
+  .button-google {
+    margin-right: 1.2vw !important;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 430px) {
+  .div-horizontal-divider-site-title {
+    margin-top: 0 !important;
+  }
+  .button-google {
+    margin-right: 0.6vw !important;
+  }
+  .button-login,
+  .button-register {
+    width: 94% !important;
+  }
+  .input-login-pass {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .div-loader-logged-page{
+    position: absolute;
+    left:40vw;
+    top: 40vw;
+  }
+  .div-authPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh !important;
   }
 
-  .button-login {
-    cursor: pointer;
-    margin-top: 1vh;
-    height: 6vh;
-    width: 32.3vw;
-    color: black;
-    background-color: #87CEEB;;
-    border: solid #15202b;
-    border-radius: 1vh;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1.6vw;
-   
+  .div-authInputs {
+    margin-left: 2vw;
+    width: 90vw;
+    order: 2;
   }
-
-  .button-register{
-    cursor: pointer;
-    margin-top: 1vh;
-    margin-bottom: 6vh;
-    height: 6vh;
-    width: 32.3vw;
-    color: black;
-    background-color: #87CEEB;;
-    border: solid #15202b;
-    border-radius: 1vh;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1.6vw;
-
-  }
-
-  .div-horizontal-divider{
-    width: 77%;
-    margin-top: 5vh;
-    margin-bottom: -2vh;
+  .div-horizontal-divider-site-title {
+    width: 99vw;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
   }
-
-  .div-horizontal-divider-site-title{
-    
-    display: none;
-   
-
+  .div-site-title-mobile {
+    display: flex;
+    justify-content: center;
   }
-
-  .divider-home-mobile-screen{
-    display: none;
-  }
-
-  .left-horizontal{
-    width: 5vw;
-    flex: 1;
-    border-bottom: 1px solid #ffffff ;
-    margin-right: 1vw;
-  }
-
-  .rigth-horizontal{
-    flex: 1;
-    border-bottom: 1px solid #ffffff;
-    margin-left: 1vw;
-  }
-
-  .text-does-not-have-account{
-    font-size: 5vw;
+  .site-title-mobile {
+    display: inline;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 1.8rem;
     color: #ffffff;
+    margin-top: 8vh;
+  }
+
+  .rigth-horizontal,
+  .left-horizontal {
+    margin-top: 5vh;
+  }
+
+  .divider-home-mobile-screen {
+    display: inline;
+    width: 100%;
+  }
+  .div-authLogin {
+    justify-content: flex-start;
+    width: 90vw;
+    margin-top: 5vh;
+  }
+  .div-login {
+    margin-top: 2vh;
+    justify-content: space-evenly;
+    width: 95vw;
+  }
+  .button-google {
+    font-size: 1rem;
+    width: 52vw;
+    margin-right: 2vw;
+    height: 6vh;
+    background-size: 2vh;
+    background-position: 5%;
+  }
+  .div-login-userName {
+    justify-content: space-around;
+    width: 95vw;
+  }
+
+  .div-login-pass {
+    width: 95vw;
+  }
+  .h3-auth {
+    font-size: 1.4rem;
+    margin-right: 2vw;
+  }
+  .label-login-userName,
+  .label-login-pass {
+    font-size: 1.3rem;
+  }
+  .label-login-RepeatPass {
+    font-size: 4vw;
+  }
+
+  .input-login-userName,
+  .input-login-pass {
+    font-size: 2vh;
+    width: 49vw;
+    height: 5vh;
+  }
+
+  .input-login-pass {
+    margin-right: 0.5vw;
+  }
+
+  .input-login-RepeatPass {
+    font-size: 2vh;
+    padding-left: 3%;
+    width: 54vw;
+    margin-right: 2vw;
+  }
+
+  .div-horizontal-divider {
+    width: 100vw;
+    margin-left: 5vw;
+
+    margin-top: 0;
+  }
+
+  .div-signUp {
+    width: 95vw;
+  }
+
+  .div-login-repeatPass {
+    justify-content: space-evenly;
+    width: 95vw;
+  }
+
+  .h3-welcomeUnLogged {
+    margin-bottom: 5vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 1rem;
+  }
+
+  .div-authTexts {
+    margin-top: 18vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-login,
+  .button-register {
+    font-size: 1.3rem;
+    width: 110%;
+    height: 7vh;
+    margin-left: 3vw;
+  }
+
+  .button-register {
+    margin-bottom: 9vh;
+  }
+
+  .login-errors-mobile {
     display: inline;
   }
 
-  .div-signUp{
-    width: 32vw;
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .signup-errors-mobile {
+    display: inline;
+    margin-top: -9vh;
+    margin-bottom: 5vh;
+  }
+  .login-errors {
+    display: none;
   }
 
-
-  
-
-
-  .label-input-userName{
-    margin-top: -0.3vh;
-    width: 20.2vw;
-    height: 5vh;
-    border: solid #cccccc;
-    border-radius: 1vh;
-    background-color: #15202b;
-    color: #cccccc;
-
+  .div-loggedText {
+    margin-top: 8vh !important;
   }
 
- 
+  .divider-loginPage-mobile-screen {
+    align-self: flex-start;
+    width: 100vw;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+  }
 
- 
-  
+  .text-does-not-have-account {
+    margin-top: 5vh;
+    font-size: 1rem;
+  }
 
-  .inputName-pass{
-    width: 20.2vw;
-    height: 5vh;
+  .h3-manualApp,
+  .h3-manualApp-last {
+    font-size: 1rem !important;
+  }
+
+  .h3-manualApp-colored-text {
+    font-size: 1.1rem !important;
+    margin-top: 0.8vh;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .h3-welcomeUnLogged {
+    font-size: 1.1rem;
+    margin-bottom: 7vh;
+  }
+
+  .button-google {
+    font-size: 0.9rem;
+    height: 60%;
+    padding-left: 3vh;
+    width: 22.8vw;
+  }
+
+  .div-authTexts {
+    margin-top: 3vh;
+  }
+  .input-login-userName,
+  .input-login-pass {
+    height: 50%;
+  }
+
+  .div-login-userName {
+    margin-bottom: -1vh;
+  }
+  .div-login-pass {
+    margin-bottom: 0;
+  }
+
+  .button-login,
+  .button-register {
+    height: 60%;
+    margin-top: -1vh;
+    width: 90%;
+  }
+
+  .div-login,
+  .div-signUp {
+    margin-bottom: -2vh;
+  }
+  .div-horizontal-divider {
+    height: 0;
     margin-bottom: 1vh;
-    border: solid #cccccc;
-    border-radius: 1vh;
-    background-color: #15202b;
-    color: #cccccc;
+  }
+  .div-authLogin,
+  .div-authRegister {
+    height: 30%;
+  }
+}
 
+@media (min-width: 800px) and (max-width: 900px) {
+  .h3-welcomeUnLogged {
+    font-size: 1.3rem;
   }
 
- 
-  
-.h3-welcomeUnLogged {
+  .button-google {
+    font-size: 0.9rem;
+    height: 60%;
+    padding-left: 2vh;
+    width: 22.8vw;
+  }
+
+  .input-login-userName,
+  .input-login-pass {
+    height: 50%;
+  }
+  .div-authTexts {
+    margin-top: 2vh;
+  }
+  .div-login-userName {
+    margin-bottom: -1vh;
+  }
+  .div-login-pass {
+    margin-bottom: 0;
+  }
+
+  .button-login,
+  .button-register {
+    height: 60%;
+    margin-top: -1vh;
+    width: 90%;
+  }
+
+  .div-login,
+  .div-signUp {
+    margin-bottom: -2vh;
+  }
+  .div-horizontal-divider {
+    height: 0;
+    margin-bottom: 1vh;
+  }
+  .div-authLogin,
+  .div-authRegister {
+    height: 30%;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1250px) {
+  .h3-welcomeUnLogged {
+    font-size: 1.6rem;
+  }
+
+  .div-loggedText {
+    margin-top: 2vh;
+  }
+
+  .button-google {
+    font-size: 1rem;
+    height: 60%;
+    padding-left: 2vh;
+  }
+
+  .input-login-userName,
+  .input-login-pass {
+    height: 50%;
+  }
+
+  .div-authTexts {
+    margin-top: 3vh;
+  }
+
+  .div-login-userName {
+    margin-bottom: -1vh;
+  }
+  .div-login-pass {
+    margin-bottom: 0;
+  }
+
+  .button-login,
+  .button-register {
+    height: 60%;
+    width: 89%;
+    margin-top: -1vh;
+  }
+
+  .div-login,
+  .div-signUp {
+    margin-bottom: -2vh;
+  }
+  .div-horizontal-divider {
+    height: 0;
+  }
+  .div-authLogin,
+  .div-authRegister {
+    height: 35%;
+  }
+}
+
+@media (min-width: 1250px) and (max-width: 1450px) {
+  .h3-welcomeUnLogged {
+    font-size: 1.8rem;
+  }
+
+  .div-loggedText {
+    margin-top: 8vh;
+  }
+
+  .button-google {
+    font-size: 1.2rem;
+    width: 22.3vw;
+  }
+
+  .input-login-userName,
+  .input-login-pass {
+    height: 50%;
+  }
+
+  .div-login-userName {
+    margin-bottom: -1vh;
+  }
+  .div-login-pass {
+    margin-bottom: 0;
+  }
+
+  .button-login,
+  .button-register {
+    width: 87%;
+    height: 60%;
+    margin-top: -1vh;
+  }
+  .div-horizontal-divider {
+    height: 0;
+  }
+
+  .div-login,
+  .div-signUp {
+    margin-bottom: -2vh;
+  }
+
+  .h3-welcomeUnLogged {
+    font-size: 1.8rem;
+  }
+
+  .h3-manualApp,
+  .h3-manualApp-last {
+    font-size: 1.8rem;
+  }
+  .h3-manualApp-colored-text {
+    font-size: 2.1rem;
+  }
+}
+
+@media (min-width: 1450px) {
+  .h3-welcomeUnLogged {
+    font-size: 2rem;
+  }
+
+  .button-google {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1450px) and (max-width: 1650px) {
+  .h3-manualApp,
+  .h3-manualApp-last {
+    font-size: 1.8rem;
+  }
+  .h3-manualApp-colored-text {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1650px) {
+  .text-does-not-have-account {
+    font-size: 1.5rem;
+  }
+  .label-login-userName,
+  .label-login-pass {
+    font-size: 2.2rem;
+  }
+  .button-google {
+    font-size: 1.8rem;
+    width: 22.2vw;
+  }
+
+  .h3-welcomeUnLogged {
+    font-size: 2.2rem;
+  }
+
+  .h3-manualApp,
+  .h3-manualApp-last {
+    font-size: 2rem;
+  }
+  .h3-manualApp-colored-text {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1750px) and (max-width: 1900px) {
+  .button-login,
+  .button-register {
+    width: 86%;
+  }
+
+  .h3-manualApp,
+  .h3-manualApp-last {
+    font-size: 2rem;
+  }
+  .h3-manualApp-colored-text {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .text-does-not-have-account {
+    font-size: 1.5rem;
+  }
+  .label-login-userName,
+  .label-login-pass {
+    font-size: 2.2rem;
+  }
+
+  .button-google {
+    font-size: 1.8rem;
+    width: 22.2vw;
+  }
+
+  .input-login-userName {
+    margin-left: 4vw;
+  }
+
+  .input-login-pass {
+    margin-left: 1vw;
+  }
+
+  .button-login,
+  .button-register {
+    width: 87.5%;
+  }
+}
+
+@media (max-height: 500px) {
+  .div-loggedText {
+    margin-top: 60vh !important;
+  }
+}
+
+@media (max-height: 650px) {
+  .div-authInputs {
+    margin-top: 12vh;
+    margin-bottom: 20vh;
+  }
+
+  .h3-manualApp,
+  .h3-manualApp-last {
+    font-size: 1.5rem;
+  }
+
+  .div-loggedText {
+    margin-top: 30vh;
+  }
+
+  .button-google {
+    margin-bottom: 2vh;
+    height: 50px;
+    margin-left: 2.5vw;
+  }
+
+  .button-register,
+  .button-login {
     margin-bottom: 10vh;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 2.3vw;
- 
-    color: #ffffff;
+    height: 50px;
   }
 
-  .div-loggedText{
-    
-    margin-top: 10vh;
-    margin-left: 18vh;
-    margin-bottom: 15vh;
-    display: flex;
-    flex-direction: column;  
-    flex-basis: 50%;
-}
-
-
-.h3-welcomeLogged{
-  margin-top: 2vh;
-  margin-left: 8vw;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 3.2vw;
-  color: #ffffff;
-
-}
-
-.div-labels-uploadImage{
-  display: flex !important;
-  flex-direction: column;  
-  justify-content: center !important; 
-  align-items: center;
-  width: 30vw;
-  margin-left: 2vw;
-  
-}
-.h3-manualApp{
-  margin-bottom: 5vh;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 1.57vw;
-  color: #ffffff;
-
-}
-
-.h3-manualApp-last{
-  margin-bottom: 5vh;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 1.57vw;
-
-  color: #ffffff;
-
-}
-
-
- .input-image {
+  .div-horizontal-divider {
     margin-top: 2vh;
-    margin-left: 11vw;
-
-  } 
-
-   .button-image {
-    cursor: pointer;
-    margin-top: -4vh;
-    margin-left: 19.5vw;
-    width: 11vw;
-    height: 5vh;
-    color: black;
-    background-color: #87CEEB;
-    border: 1px solid #15202b;
-    border-radius: 1vh;
-    font-family: "Roboto";
-    font-weight: 400;
-    font-size: 1.5vw;
-    
+    margin-bottom: 2vh;
   }
 
-  .picture-login {
-    cursor: pointer;
-    margin-top: -3vh;
-    margin-bottom: 1vh;
-    margin-left: 7vw;
-    border-radius: 50%;
-    width: 29vw;
-    height: 40vh;
-  } 
-
-  .div-site-title-mobile ,.site-title-mobile {
-    display: none;
+  .div-authRegister {
+    margin-bottom: 10vh;
   }
-
-  .login-errors-mobile{
-    display: none;
+  .h3-auth {
+    font-size: 1.8rem;
   }
-  .signup-errors-mobile{
-    display: none;
-
-  }
-
-  @media only screen and (max-width: 600px) { 
-    .div-authPage{
-      display: flex;
-      flex-direction: column;
-      height: 100vh !important;
-    }
-
-    .div-authInputs{
-      margin-left: 2vw;
-      width: 90vw;
-      order: 2;
-    }
-    .div-horizontal-divider-site-title{
-      width: 99vw;
-      margin-top: 5vh;
-      margin-bottom: -2vh;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-  
-    }
-    .div-site-title-mobile{
-      display: flex;
-      justify-content: center;  
-      margin-top: 5vh;  
-    }
-    .site-title-mobile{
-      display: inline;
-      font-family: "Roboto";
-      font-weight: 400;
-      font-size: 8vw;
-      color: #ffffff;
-    }
-
-    
-    .divider-home-mobile-screen{
-      display: inline;
-      width: 100%;
-
-    }
-    .div-authLogin{
-      justify-content: flex-start;
-      width: 90vw;
-    }
-    .div-login{
-      margin-top: 2vh;
-      justify-content: space-around;
-      width: 95vw;
-    }
-    .button-google{
-      font-size: 5vw;
-      width: 56vw;
-      background-size: 2vh;
-      background-position:5%
-    }
-    .div-login-userName{
-      justify-content: space-around;
-      width: 95vw;
-    }
-
-    .div-login-pass{
-      justify-content: space-around;
-      width: 95vw;
-
-    }
-    .h3-auth{
-      font-size: 7vw;
-    }
-    .label-login-userName ,.label-login-pass{
-      font-size: 6vw;
-    }
-    .label-login-RepeatPass{
-      font-size: 4vw;
-    }
-
-    .input-login-userName{
-      font-size: 2vh;
-      padding-left:3%;
-      width: 54vw;
-      margin: 0;
-      margin-left: 6vw;
-    }
-
-
-    .input-login-pass{
-      font-size: 2vh;
-      padding-left:3%;
-      width: 54vw;
-    }
-
-    .input-login-RepeatPass{
-      font-size: 2vh;
-      padding-left:3%;
-      width: 54vw;
-      margin-right: 1vw;
-    }
-
-    .div-horizontal-divider{
-      width: 95vw;
-    }
-
-    .div-signUp{
-      width: 95vw;
-    }
-
-    .div-login-repeatPass{
-      justify-content:space-around;
-      width: 95vw;
-    }
-  
-    .h3-welcomeUnLogged{
-      margin-bottom: 5vh;
-      margin-left: 1vw;
-      margin-right: 0.5vw;
-      font-size: 5vw;
-    }
-
-    .div-authTexts{
-      margin-top:8vh !important;
-      width: 100vw;
-      height: 33.5vh;
-      justify-content: center;
-      align-items: center;
-
-    }
-
-
-    .button-login ,.button-register{
-      font-size: 5vw;
-      width: 94vw;
-    }
-
-    .button-register{
-      margin-bottom: 9vh;
-    }
-
-    .login-errors-mobile{
-      display: inline;
-      
-    }
-
-    .signup-errors-mobile{
-      display: inline;
-      margin-top: -9vh;
-     margin-bottom: 5vh;
-    }
-    .login-errors{
-      display: none;
-    }
-    .div-picture-label{
-      display: flex;
-      flex-direction: row;
-      width: 100vw;
-    }
-
-    .div-labels-uploadImage{
-      display: flex !important;
-      flex-direction: column;  
-      justify-content: center !important; 
-      align-items: center;
-      width: 30vw;
-      margin-bottom: 5vh;
-      
-    }
-
-
-    .div-loggedText {
-      margin-top: 1vh;
-      margin-left:1.5vw;
-      order: 1; 
-    }
-
-    .picture-login{
-      margin-left: 5vw !important; 
-      margin: 0;
-      width: 60%;
-      height: 75%;
-          
-    }
-    .h3-welcomeLogged{
-      font-size: 10vw;
-      margin-right: 4vh;
-      white-space: nowrap;
-    }
-   
-    .input-image{
-      margin-top: 0;
-     
-      margin-left: 38vw;
-    }
-    .button-image {
-     width: 27vw; 
-     height: 7vh;
-     margin: 0;
-     font-size: 5vw;
-     }
-
-     .divider-loginPage-mobile-screen{
-      align-self: flex-start;
-      width: 100vw;
-      margin-bottom: 3vh;
-      margin-top: 1vh;
-     }
-     .h3-manualApp{
-      font-size: 5vw;
-      margin-bottom:1vh ;
-     }
-     .h3-manualApp-last{
-      font-size: 5vw;
-      margin-bottom:7vh ;
-     }
 }
-  
 
- 
-  @media only screen and (min-width: 1280px) and (max-width: 1399px) {
-    .button-login ,.button-register{
-      width:34vw !important ;
-    }
-
-    .button-google{
-      width:22.9vw;
-      margin-left:1vw;
-
-    }
-
-    .input-login-userName{
-      padding-left: 2%;
-      font-size:1.5vw ;
-     }
-
-     .input-login-pass{
-      padding-left: 2%;
-      font-size:1.5vw ;
-     }
-
-     .input-login-RepeatPass{
-      padding-left: 2%;
-      font-size:1.5vw ;
-      width: 22vw;
-     }
-     .div-horizontal-divider{
-      width: 33.5vw;
-     }
-    .text-does-not-have-account{
-      font-size: 1.5vw;
-    }
-    .div-loggedText{
-      margin-top: 9vh !important;
-    }
-  
-    .div-authTexts{
-      margin-left: 5vw;
-      margin-top: 9vh !important;
-  
-    }
-    
-  .h3-welcomeLogged{
-    margin-left: 3vw;
-
-  }
-  
-  .h3-welcomeUnLogged{
-    font-size: 2.2vw;
+@media (max-width: 500px) and (min-height: 750px) {
+  .div-loggedText {
+    margin-top: 0vh !important;
   }
 
-  .div-labels-uploadImage{
-    display: flex !important;
-    flex-direction: column;  
-    justify-content: center !important; 
-    align-items: center;
-    width: 30vw;
-    margin-left: -1vw;
-   
-   }
-  .button-image{
-    margin-left:18vw
+  .h3-manualApp,
+  .h3-manualApp-last {
+    font-size: 1.1rem !important;
+  }
+  .h3-manualApp-colored-text {
+    font-size: 1.2rem !important;
+    margin-top: 5vh;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 1950px) {
+  .button-google {
+    margin-left: 2.5vw !important;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 1750px) {
+  .button-google {
+    margin-left: 2vw !important;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 1450px) {
+  .button-google {
+    margin-left: 1vw !important;
+  }
+}
+@media (max-height: 650px) and (max-width: 1250px) {
+  .button-google {
+    margin-left: 1vw !important;
   }
 
-  .input-image{
-    margin-left: 9vw;
-  }
-  
+  .h3-auth {
+    font-size: 1.2rem !important ;
   }
 
-  @media only screen and (min-width: 1399px) and (max-width: 1680px) {
-    .button-login ,.button-register{
-      width: 32.8vw;
-    }
-    .button-google{
-      font-size: 1.6vw;
-      width:22.8vw;
-      margin-left:1vw;
-
-    }
-
-    .input-login-userName ,.input-login-pass{
-      padding-left: 2%;
-      font-size: 1.5vw;
-    }
-
-    .input-login-RepeatPass{
-      padding-left: 2%;
-      font-size: 1.5vw;
-    }
-
-    .text-does-not-have-account{
-      font-size: 1.6vw;
-    }
-    .div-authTexts{
-      margin-top: 10vh;
-    }
-
-    .alert-div-login-error{
-      margin-top: 2.5vh !important;
-    }
-
-    .h3-manualApp{
-      font-size: 1.65vw;
-    }
-
+  .h3-welcomeUnLogged {
+    font-size: 1.4rem;
+    margin-top: 10vh;
   }
-
-  @media only screen and (min-width: 1500px) and (max-width: 1800px) {
-    .div-loggedText{
-      margin-top: 6vh !important;
-    }
-
-    .h3-manualApp{
-      font-size:1.7vw
-    }
-    .h3-manualApp-last{
-      font-size:1.7vw;
-      margin-bottom:5vh ;
-     }
-
-    .h3-welcomeLogged{
-      margin-left:10vw ;
-      font-size:3.2vw
-    }
-    .input-image{
-      margin-left: 13vw;
-    }
-    .button-image{
-      margin-left:21vw;
-      width: 13vw;
-      height: 6vh;
-    }
-
-    .button-google{
-      margin-left: 1.3vw;
-      width: 23.5vw;
-    }
-
-    .button-login ,.button-register{
-      width: 34vw;
-    }
-
-    .input-login-userName{
-    padding-left: 2%;
-    width: 22.6vw;
-    font-size: 1.6vw;
-
-    }
-
-    .text-does-not-have-account{
-      font-size: 1.8vw;
-    }
-
-    .input-login-pass{
-      margin-left: 0vw;
-      padding-left: 2%;
-      width: 22.6vw;
-      font-size: 1.6vw;
-    }
-
-    .input-login-RepeatPass{
-      margin-left: 0vw;
-      padding-left: 2%;
-      width: 22.7vw;
-      font-size: 1.6vw;
-    }
-
-    .div-authTexts{
-      font-size: 0vw;
-      margin-top: 10vh;
-    }
-
-
-  }
-
-  @media only screen and (min-width: 1800px) and (max-width: 2200px) { 
-   
-    .div-loggedText{
-      margin-top: 8vh !important;
-    }
-
-    .h3-manualApp{
-      font-size:1.6vw
-    }
-
-    .h3-manualApp-last{
-      font-size:1.6vw;
-      margin-bottom:5vh ;
-     }
-
-    .h3-welcomeLogged{
-      margin-left:9vw ;
-      font-size:3.2vw;
-    }
-
-    .input-image{
-      margin-left: 14vw;
-      height: 2vh;
-    }
-    .button-image{
-      margin-left:21vw;
-      width: 13vw;
-      height: 6vh;
-    }
-
-    .button-google{
-      margin-left: 1.6vw;
-      width: 23.5vw;
-      font-size: 1.6vw;
-    }
-   
-    .button-login ,.button-register{
-      width: 32.9vw;
-    }
-    .input-login-userName{
-      font-size:1.5vw;
-      padding-left: 2%;
-      width: 22.4vw;
-    }
-
-    .input-login-pass{
-      font-size:1.5vw;
-      margin-left: 0.3vw;
-      padding-left: 2%;
-      width: 22.4vw;
-    }
-
-    .input-login-RepeatPass{
-      font-size:1.5vw;
-      padding-left: 2%;
-      margin-left: 0.8vw;
-      width: 22.5vw;
-    }
-
-    .label-login-userName,.label-login-pass {
-      font-size: 1.8vw;
-    }
-
-    .label-login-RepeatPass{
-      font-size: 1.03vw;
-    }
-
-    .div-authTexts {
-      margin-top: 10vh;
-
-    }
-
-    .h3-welcomeUnLogged{
-      font-size: 2.2vw;
-    }
-
-    .h3-auth{
-      font-size: 1.85vw;
-    }
-    .alert-text-post-error{
-      margin-right: 0.5vw;
-      
-    }
-
-    .alert-div-login-error{
-      margin-top: 3vh;
-    }
-    .text-does-not-have-account{
-      font-size: 1.5vw;
-    }
-
-  }
-
-  @media only screen and (min-width: 1280px) and (max-width: 1399px) {
-    .button-login ,.button-register{
-      width:33.3vw !important;
-    }
-
-    .alert-div-login-error{
-      margin-top: 4.5vh;
-    }
-    .h3-welcomeLogged{
-      margin-left: 4vw;
-    }
-
-    .picture-login{
-      width: 29vw;
-      height: 39vh;
-      margin-left: 4vw;
-    }
-
-  }
+}
