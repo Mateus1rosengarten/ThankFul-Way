@@ -6,42 +6,39 @@ import "./Navbar.css";
 import { userContext } from "../context/userContext";
 
 function Navbar() {
-  const { userLoggedObject,setProfileNameValue } = useContext(userContext);
+  const { userLoggedObject, setProfileNameValue } = useContext(userContext);
   const navigate = useNavigate(null);
 
   const logout = async () => {
     await signOut(authentication);
-    setProfileNameValue('')
-    navigate('/')
+    setProfileNameValue("");
+    navigate("/");
   };
 
   return (
     <div className="div-navbar">
-    <nav className="navbar">
-      <ul>
-        <li className="first-item">
-          <Link to={userLoggedObject ? "/blog" : "/"}> Blog</Link>
-        </li>
-        <li className="second-item">
-          <Link to={userLoggedObject ? "/profile" : "/"}> Profile </Link>
-        </li>
-        <li className="third-item">
-          <Link to="/"> {userLoggedObject ?  "Home" : "Login"}</Link>
-        </li>
+      <nav className="navbar">
+        <ul>
+          <li className="first-item">
+            <Link to={userLoggedObject ? "/blog" : "/"}> Blog</Link>
+          </li>
+          <li className="second-item">
+            <Link to={userLoggedObject ? "/profile" : "/"}> Profile </Link>
+          </li>
+          <li className="third-item">
+            <Link to="/"> {userLoggedObject ? "Home" : "Login"}</Link>
+          </li>
         </ul>
-        
-        <button
-        className="button-logout"
-        style={{ opacity: !userLoggedObject && "0.5" }}
-        disabled={!userLoggedObject}
-        onClick={logout}
-      >
-        Logout
-      </button>
 
-     
-      
-    </nav>
+        <button
+          className="button-logout"
+          style={{ opacity: !userLoggedObject && "0.5" }}
+          disabled={!userLoggedObject}
+          onClick={logout}
+        >
+          Logout
+        </button>
+      </nav>
     </div>
   );
 }

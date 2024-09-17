@@ -1,4 +1,4 @@
-.div-navbar{
+.div-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,14 +6,16 @@
   top: 0;
   width: 100%;
   height: 10vh;
+  min-height: 50px;
+  z-index: 1000;
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 80vw;
-  height: 10vh;
+  min-height: 90px;
   background: #343a40;
   border-radius: 6px;
 }
@@ -23,14 +25,14 @@ a:link,
 a:focus,
 a:hover,
 a:active {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
 a:focus,
 a:hover,
 a:active {
-  color:#87CEEB;
+  color: #87ceeb;
   text-decoration: none;
 }
 
@@ -38,7 +40,7 @@ a:active {
   font-size: 200%;
   display: inline;
   text-decoration: none;
-  color: #FFA07A;
+  color: #ffa07a;
 }
 
 .second-item {
@@ -55,30 +57,27 @@ a:active {
   margin-left: 5vw;
 }
 
-
-
-.button-logout{
+.button-logout {
   align-self: center;
   margin-right: 3vw;
   cursor: pointer;
   width: 11vw;
   height: 7vh;
+  min-height: 50px;
   color: black;
-  background-color: #87CEEB;
+  background-color: #87ceeb;
   border: 1px solid #15202b;
   border-radius: 6px;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 130%;
-  
 }
 
-@media only screen and (max-width: 600px) { 
-
-  .div-navbar{
+@media only screen and (max-width: 600px) {
+  .div-navbar {
     justify-content: flex-start;
   }
-  .navbar{
+  .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -88,40 +87,64 @@ a:active {
     border-radius: 6px;
   }
 
-  ul{
-   padding-left: 4% !important;
+  ul {
+    padding-left: 4% !important;
   }
 
-  .first-item ,.second-item , .third-item{
-    font-size: 7vw;
-  }
-
-  .button-logout{
-    margin-right: 3vw;
-    width: 23vw;
-    height: 7vh;
+  .first-item,
+  .second-item,
+  .third-item {
     font-size: 5vw;
-    
   }
 
-  
-
-
-
-
+  .button-logout {
+    margin-right: 5vw;
+    width: 20vw;
+    font-size: 5vw;
+  }
 }
-
 
 @media only screen and (min-width: 1800px) {
+  .first-item,
+  .second-item,
+  .third-item {
+    font-size: 250%;
+  }
 
-.first-item,.second-item,.third-item {
-  font-size: 250%;
-
+  .button-logout {
+    font-size: 170%;
+  }
 }
 
-.button-logout{
-  font-size: 170%;
-  
+@media only screen and (max-height: 700px) {
+  .button-logout {
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
 }
 
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .first-item,
+  .second-item,
+  .third-item {
+    font-size: 1.6rem;
+  }
+
+  .button-logout {
+    width: 13vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1250px) {
+  .first-item,
+  .second-item,
+  .third-item {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 430px) and (max-height: 935px) {
+  .button-logout {
+    height: clamp(40px, 7vh, 60px);
+  }
 }

@@ -1,14 +1,9 @@
 import "./RedWarningAlertPost.css";
 
-function RedWarningAlert({textProps,divStyleProps,spanStyleProps}) {
-
-
+function RedWarningAlert({ textProps, divStyleProps, spanStyleProps }) {
   return (
-
     <div className={divStyleProps}>
-      <span className={spanStyleProps}>
-      {textProps}
-      </span>
+      <span className={spanStyleProps}>{textProps}</span>
     </div>
   );
 }

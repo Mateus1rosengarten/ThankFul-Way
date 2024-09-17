@@ -6,7 +6,13 @@ function PictureLogin({ functionChange, functionUpload }) {
         onChange={functionChange}
         type="file"
         id="inputfile"
+        style={{ display: "none" }}
       ></input>
+      <button className="button-label">
+        <label className="label-picture" htmlFor="inputfile">
+          Choose File
+        </label>{" "}
+      </button>
       <button className="button-image" onClick={functionUpload}>
         Upload
       </button>
