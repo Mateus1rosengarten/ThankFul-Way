@@ -6,14 +6,15 @@ import {getStorage} from 'firebase/storage'
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBv8oVGlfYgr8mxBrV6bLsEdCXu1fXYzko",
-  authDomain: "greatful-way.firebaseapp.com",
-  projectId: "greatful-way",
-  storageBucket: "greatful-way.appspot.com",
-  messagingSenderId: "805816885274",
-  appId: "1:805816885274:web:0f4dfb90d0352f21c2f1a3",
-  measurementId: "G-W6KT7DMDTS"
+  apiKey: "AIzaSyAtvTlmgY_I1hCejc7JyHt6GlWqYUC8SKg",
+  authDomain: "microblogging-app-3f743.firebaseapp.com",
+  projectId: "microblogging-app-3f743",
+  storageBucket: "microblogging-app-3f743.appspot.com",
+  messagingSenderId: "679913090011",
+  appId: "1:679913090011:web:dd6e2994192ba1659c95fe",
+  measurementId: "G-QP035WFC36"
 };
+
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
