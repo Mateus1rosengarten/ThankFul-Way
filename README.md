@@ -13,7 +13,7 @@ Microblogging:
 Users can post short messages in the microblog.
 Messages are displayed in a chronological order.
 
-# Features
+
 
 # #  User Authentication:
 Users can sign up for an account.
