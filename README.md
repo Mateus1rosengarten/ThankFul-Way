@@ -2,7 +2,7 @@
 This project is a microblogging platform developed using React and Firebase. It allows users to authenticate, post daily gratitudes, and update their profile data.
 Install the npm package to run the project in your machine.
 
-# # Features
+# Features
 
 
 User Authentication:
