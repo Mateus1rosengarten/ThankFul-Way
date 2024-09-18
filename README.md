@@ -4,7 +4,7 @@ Install the npm package to run the project in your machine.
 
 # # Features
 
-<<<<<<< HEAD
+
 User Authentication:
 Users can sign up for an account.
 Existing users can log in securely.
